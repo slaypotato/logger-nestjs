@@ -1,10 +1,9 @@
 {
-  "name": "@inm/logger",
+  "name": "@inm\/logz-logger",
   "version": "1.0.1",
   "description": "Nest.js Logger application for Logz.io",
   "author": "Rafael de Carvalho Morales <rafael.morales@inmetrics.com.br>",
   "license": "MIT",
-  "readme": "README.md",
   "main": "dist/app.module.js",
   "files": [
     "dist/**/*",
@@ -18,11 +17,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/slaypotato/logger-nestjs"
+    "url": "git+https://github.com/slaypotato/logger-nestjs.git"
   },
   "bugs": {
-    "email": "rafael.morales@inmetrics.com.br",
-    "url": "https://github.com/slaypotato/logger-nestjs"
+    "url": "https://github.com/slaypotato/logger-nestjs",
+    "email": "rafael.morales@inmetrics.com.br"
   },
   "scripts": {
     "prebuild": "rimraf dist",
@@ -39,7 +38,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@nestjs/common": "^7.6.15",
     "@nestjs/core": "^7.6.15",
     "@nestjs/platform-express": "^7.6.15",
@@ -49,7 +48,6 @@
     "nest-winston": "^1.5.0",
     "winston": "^3.3.3"
   },
-  "dependencies": {},
   "devDependencies": {
     "@nestjs/cli": "^7.6.0",
     "@nestjs/schematics": "^7.3.0",
@@ -72,6 +70,10 @@
     "tsconfig-paths": "^3.9.0",
     "typescript": "^4.2.3"
   },
+  "peerDependencies": {
+    "@nestjs/common": "^5.0.0 || ^6.6.0 || ^7.0.0",
+    "winston": "^3.0.0"
+  },
   "jest": {
     "moduleFileExtensions": [
       "js",
@@ -88,5 +90,9 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "homepage": "https://github.com/slaypotato/logger-nestjs#readme",
+  "directories": {
+    "test": "test"
   }
 }
