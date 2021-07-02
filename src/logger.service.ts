@@ -1,4 +1,5 @@
-import { Injectable, Logger } from '@nestjs/common';
+import { Injectable as Injectable } from '@nestjs/common';
+import { Logger as Logger } from '@nestjs/common';
 import inputLoggerDto from './dtos/inputLogger.dto';
 import formatLogMessage from './lib/LogFormat';
 

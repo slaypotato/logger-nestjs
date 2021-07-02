@@ -1,5 +1,6 @@
-import { DynamicModule, Module } from '@nestjs/common';
-import { WinstonModule } from 'nest-winston';
+import { DynamicModule as DynamicModule } from '@nestjs/common';
+import { Module as Module } from '@nestjs/common';
+import { WinstonModule as WinstonModule } from 'nest-winston';
 
 import { LoggerService } from './logger.service';
 import optionsLoggerDto from './dtos/optionsLogger.dto';

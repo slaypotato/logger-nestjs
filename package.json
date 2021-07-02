@@ -1,6 +1,6 @@
 {
   "name": "@inm\/logz-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nest.js Logger application for Logz.io",
   "author": "Rafael de Carvalho Morales <rafael.morales@inmetrics.com.br>",
   "license": "MIT",

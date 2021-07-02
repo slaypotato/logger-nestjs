@@ -1,5 +1,5 @@
-import { Format } from 'logform';
-import TransportStream from 'winston-transport';
+import { Format as Format } from 'logform';
+import * as TransportStream from 'winston-transport';
 
 export default class optionsLoggerDto {
   level: string;
